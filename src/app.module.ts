@@ -7,7 +7,7 @@ import { BooksModule } from './books/books.module';
 @Module({
   imports: [
     BooksModule,
-    MongooseModule.forRoot('mongodb://127.0.0.1:27017/library')
+    MongooseModule.forRoot('mongodb://127.0.0.1:27017/library'),
   ],
   controllers: [AppController],
   providers: [AppService],
