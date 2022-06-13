@@ -9,6 +9,6 @@ export class BooksService {
 
   async getAllBooks() {
     const allBooks = await this.bookModel.find().exec();
-    return allBooks as Book[];
+    return allBooks;
   }
 }
